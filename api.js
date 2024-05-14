@@ -14,7 +14,7 @@ app.use(morgan('dev'));
 // Функция для динамического определения целевого URL на основе поддомена
 function getTargetUrl(req) {
   const host = req.headers.host;
-  const subdomainMatch = host.match(/^(.*?)\.46.30.45.66$/);
+  const subdomainMatch = host.match(/^(.*?)\.vm592161.eurodir.ru$/);
   if (subdomainMatch) {
     const subdomain = subdomainMatch[1];
     return `https://${subdomain}.gotinder.com`;
